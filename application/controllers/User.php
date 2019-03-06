@@ -6,7 +6,7 @@ class User extends MY_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->helper('url');
-		//$this->load->model('users_model');
+		$this->load->model('users_model');
 	}
 
 	public function index(){
@@ -30,7 +30,7 @@ class User extends MY_Controller {
 		$password = $_POST['password'];
 
 		$data = $this->users_model->login($username, $password);
-
+		
 		if($data){
 			$this->session->set_userdata('user', $data);
 			redirect('dashboard');
