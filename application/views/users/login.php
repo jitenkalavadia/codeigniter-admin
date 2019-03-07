@@ -13,6 +13,7 @@
     </head>
     <body class="bg-black">
         <div class="form-box" id="login-box">
+            <?php echo validation_errors(); ?>
             <div class="header">Sign In</div>
             <form action="<?php echo site_url('user/login');?>" method="post">
                 <div class="body bg-gray">

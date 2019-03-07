@@ -19,6 +19,11 @@
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                 </a>
             </li>
+            <li class="active">
+                <a href="<?php echo site_url('employee'); ?>">
+                    <i class="fa fa-user"></i> <span>Employee</span>
+                </a>
+            </li>
         </ul>
     </section>
 </aside>
